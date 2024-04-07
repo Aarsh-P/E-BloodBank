@@ -43,11 +43,12 @@ const PendingRequest = () => {
   return (
     <div className="flex flex-wrap justify-center h-[67.9vh]">
       {allReq.length === 0 ||
-      allReq.filter((req) => req.status === "pending").length === 0 ? (
+      allReq.filter((req) => req.status === "pending").filter((req) => req.bloodGroup === user.bloodGroup).length === 0 ? (
         <p>There are no pending requests at this time.</p>
       ) : (
         allReq
           .filter((req) => req.status === "pending")
+          .filter((req) => req.bloodGroup === user.bloodGroup)
           .map((req) => {
             return (
               <div key={req._id} className="m-4">
