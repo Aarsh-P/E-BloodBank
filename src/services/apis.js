@@ -10,6 +10,6 @@ export const endpoints = {
     "http://localhost:4000/request/getAllHospitalRequest",
   DONOR_AGREE_TO_DONATE: "http://localhost:4000/request/agreetodonate",
   FULFILL_REQUEST: "http://localhost:4000/request/fulfillRequest",
-  GET_DONOR_DETAIL: BASE_URL + "/request/getDonorDetail",
+  GET_DONOR_DETAIL: "http://localhost:4000/request/getDonorDetail",
 };
 
